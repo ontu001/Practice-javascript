@@ -23,60 +23,77 @@
 
 
 //---- Array
-const topAiTool=['OpenAI','Gemini','Cluade','Grok','LLMA'];
-const useCase = new Array('Text generation','Video Generation','Image generation','Audio Generation');
+// const topAiTool=['OpenAI','Gemini','Cluade','Grok','LLMA'];
+// const useCase = new Array('Text generation','Video Generation','Image generation','Audio Generation');
 
-console.log(topAiTool.at(-1))
-console.log(useCase)
+// console.log(topAiTool.at(-1))
+// console.log(useCase)
 
-topAiTool[4]='Perplexity'
-console.log(topAiTool)
+// topAiTool[4]='Perplexity'
+// console.log(topAiTool)
 
-const strUseCase = useCase.toString();
-console.log(strUseCase)
-console.log(topAiTool.join('-'))
-console.log('\n')
+// const strUseCase = useCase.toString();
+// console.log(strUseCase)
+// console.log(topAiTool.join('-'))
+// console.log('\n')
 
-topAiTool.pop()
-console.log(topAiTool)
-topAiTool.push('Deepseek')
-console.log(topAiTool)
-console.log('\n')
-
-
-topAiTool.unshift('Hugging face')
-console.log(topAiTool)
-
-console.log('\n')
-topAiTool.shift()
-console.log(topAiTool)
+// topAiTool.pop()
+// console.log(topAiTool)
+// topAiTool.push('Deepseek')
+// console.log(topAiTool)
+// console.log('\n')
 
 
-const arr1 = ['apple','mango','orrange',['pineapple','watermelon']];
-const arr2 = ['ice-cream','chocolate','chips'];
-const arr3 = ['French fry','Burger','Pizza'];
+// topAiTool.unshift('Hugging face')
+// console.log(topAiTool)
+
+// console.log('\n')
+// topAiTool.shift()
+// console.log(topAiTool)
 
 
-console.log('\n')
-
-const arr4 = arr1.concat(arr2,arr3)
-console.log(arr4)
-console.log('\n')
-
-const neww = arr1.flat()
-console.log(neww)
+// const arr1 = ['apple','mango','orrange',['pineapple','watermelon']];
+// const arr2 = ['ice-cream','chocolate','chips'];
+// const arr3 = ['French fry','Burger','Pizza'];
 
 
+// console.log('\n')
 
-console.log('\n')
+// const arr4 = arr1.concat(arr2,arr3)
+// console.log(arr4)
+// console.log('\n')
+
+// const neww = arr1.flat()
+// console.log(neww)
 
 
 
-arr2.splice(1,0,'coca cola')
-console.log(arr2)
-
-console.log('\n')
+// console.log('\n')
 
 
-arr2.splice(1)
-console.log(arr2)
+
+// arr2.splice(1,0,'coca cola')
+// console.log(arr2)
+
+// console.log('\n')
+
+
+// arr2.splice(1)
+// console.log(arr2)
+
+
+
+
+//---- Math Functions
+let num1 = 3.44553344;
+let num2 = 3;
+console.log(Math.round(num1))
+console.log(Math.ceil(num1))
+console.log(Math.floor(num1))
+console.log(Math.pow(num2,2))
+console.log(Math.sqrt(9))
+console.log(Math.abs(-5))
+console.log(Math.max(12,22,33,1))
+console.log(Math.min(12,22,33,1))
+console.log(Math.PI)
+console.log(Math.sin((90* Math.PI)/180))
