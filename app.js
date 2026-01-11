@@ -101,9 +101,9 @@
 
 
 //Practice Function
-let num1 = parseInt(prompt("Enter 1st Value = "))
-let num2 = parseInt(prompt("Enter 2nd Value = "))
-let operation = prompt('Enter your Operation Type between + , - ,*, / = ')
+// let num1 = parseInt(prompt("Enter 1st Value = "))
+// let num2 = parseInt(prompt("Enter 2nd Value = "))
+// let operation = prompt('Enter your Operation Type between + , - ,*, / = ')
 
 function calculator(operation,num1,num2){
     switch(operation){
@@ -124,4 +124,10 @@ function calculator(operation,num1,num2){
     }
 
 }
-calculator(operation,num1,num2)
+//alculator(operation,num1,num2)
+
+
+// Self Invoking Function
+(function(){
+    console.log("Hello from self invoking function")
+}())
