@@ -128,6 +128,14 @@ function calculator(operation,num1,num2){
 
 
 // Self Invoking Function
-(function(){
-    console.log("Hello from self invoking function")
-}())
+(function(message){
+    console.log("Hello from self invoking function",message)
+}('what about the object?'))
+
+
+//stroing function in a varriable
+let cal = function(a,b){
+    return a+b;
+}
+
+console.log(cal(10,20))
