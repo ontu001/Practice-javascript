@@ -85,15 +85,43 @@
 
 
 //---- Math Functions
-let num1 = 3.44553344;
-let num2 = 3;
-console.log(Math.round(num1))
-console.log(Math.ceil(num1))
-console.log(Math.floor(num1))
-console.log(Math.pow(num2,2))
-console.log(Math.sqrt(9))
-console.log(Math.abs(-5))
-console.log(Math.max(12,22,33,1))
-console.log(Math.min(12,22,33,1))
-console.log(Math.PI)
-console.log(Math.sin((90* Math.PI)/180))
+// let num1 = 3.44553344;
+// let num2 = 3;
+// console.log(Math.round(num1))
+// console.log(Math.ceil(num1))
+// console.log(Math.floor(num1))
+// console.log(Math.pow(num2,2))
+// console.log(Math.sqrt(9))
+// console.log(Math.abs(-5))
+// console.log(Math.max(12,22,33,1))
+// console.log(Math.min(12,22,33,1))
+// console.log(Math.PI)
+// console.log(Math.sin((90* Math.PI)/180))
+
+
+
+//Practice Function
+let num1 = parseInt(prompt("Enter 1st Value = "))
+let num2 = parseInt(prompt("Enter 2nd Value = "))
+let operation = prompt('Enter your Operation Type between + , - ,*, / = ')
+
+function calculator(operation,num1,num2){
+    switch(operation){
+        case '+':
+            console.log(`Addision is = ${num1+num2}`)
+            break;
+        case '-':
+            console.log(`Substraction is = ${num1-num2}`)
+            break;
+        case '*':
+            console.log(`Multiplication is = ${num1*num2}`)
+            break;
+        case '-':
+            console.log(`Division is = ${num1/num2}`)
+            break;
+        default:
+            console.log("Undefined")
+    }
+
+}
+calculator(operation,num1,num2)
