@@ -150,7 +150,87 @@ console.log(cal(10,20))
 const mobilModel = {
     'Brand' : 'Apple',
     'Processor' : 'Bionic A17',
-    'Model' : 'Air17'
+    'Model' : 'Air17',
+    'Release Year' : '2025',
+    'IsWaterProof' : true,
+    'Camera' : ['20mp','12mp','5mp']
+
 }
 
+
+mobilModel.IsWaterProof = false // to change the object value
 console.log(mobilModel.Brand)
+console.log(mobilModel['Release Year'])
+
+
+// to freeze an object so that it can\n't manupulate from outside
+Object.freeze(mobilModel);
+
+// to check existance of any object property
+console.log(mobilModel.hasOwnProperty('Camera'))
+
+
+// to check keys and values inside an object
+console.log(Object.keys(mobilModel))
+console.log(Object.values(mobilModel))
+
+
+// write function inside an object
+const phoneModel = {
+    'Brand' : 'Samsung',
+    brandName : function(){
+        return `Mobile brand is ${this.Brand}`
+    }
+}
+
+console.log(phoneModel.brandName())
+
+
+
+const obj1 = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+
+const obj2 = {
+  p: 1,
+  q: 2,
+  r: 3,
+};
+
+const obj3 = {
+  x: 1,
+  y: 2,
+  z: 3,
+};
+
+const final = { obj1, obj2 };
+// const objFinal = Object.assign(target, source);
+// const objFinal = Object.assign({}, obj1, obj2, obj3);
+// const obj3 = { obj1, obj2 };
+// const objFinal = Object.assign(target, source);
+// const objFinal = Object.assign({}, obj1, obj2, obj3);
+
+const objFinal = { ...obj1, ...obj2, ...obj3 };
+console.log(objFinal);
+
+console.log(mobileModel.battray.mah);
+
+/*
+ * Object Constractor
+ * Singleton
+ */
+function Person(first, last) {
+  (this.firstName = first), (this.lastName = last);
+}
+
+const person1 = new Person('rohan', 'rahman');
+person1.age = 18;
+const person2 = new Person('Shovo', 'Ahmed');
+person2.greet = function () {
+  return 'Hello';
+};
+
+console.log(person1);
+console.log(person2.greet());
